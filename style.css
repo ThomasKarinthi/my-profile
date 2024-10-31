@@ -1,0 +1,119 @@
+/* Style général pour la page avec fond dégradé */
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+/* Style pour le titre principal avec effet de texte */
+h1 {
+    color: #f7c94e;
+    font-size: 4em;
+    margin-top: 50px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 3px 3px 8px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+    to {
+        text-shadow: 3px 3px 12px rgba(255, 215, 0, 0.9), 0 0 30px rgba(255, 215, 0, 0.6);
+    }
+}
+
+/* Style pour l'image de profil avec effet de halo */
+img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.5);
+}
+
+/* Style pour les paragraphes */
+p {
+    max-width: 700px;
+    line-height: 1.8;
+    font-size: 1.1em;
+    padding: 0 30px;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour les sous-titres */
+h2 {
+    color: #f7c94e;
+    font-size: 2em;
+    margin-top: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: #f7c94e;
+    bottom: -5px;
+    left: 25%;
+    border-radius: 2px;
+}
+
+/* Style pour le lien "Golf LeFleur" */
+a {
+    color: #f7c94e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+/* Style pour la liste des réseaux sociaux */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+/* Animation sur les icônes de réseaux sociaux */
+ul li a {
+    font-size: 2.5em;
+    color: #f7c94e;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+ul li a:hover {
+    color: #e0e0e0;
+    transform: rotate(10deg) scale(1.2);
+}
